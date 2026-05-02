@@ -9,7 +9,7 @@
             background: #ffffff; color: #333;
             padding: 20px; border-radius: 15px;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            transition: all 0.6s ease-in-out;
             z-index: 9999; font-family: 'Segoe UI', Tahoma, sans-serif;
             border-left: 5px solid #00d2ff;
             display: flex;
@@ -92,7 +92,7 @@
     function stopDragging() {
         isDragging = false;
         // ড্র্যাগ শেষ হলে ট্রানজিশন আবার চালু করা যাতে হাইড হওয়ার সময় স্মুথলি যায়
-        widget.style.transition = 'all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)';
+        widget.style.transition = 'all 0.6s ease-in-out;';
     }
 
     widget.addEventListener('mousedown', startDragging);
